@@ -3,7 +3,7 @@
 <hr/>
 
 ### Hi there 👋
-
+<span class="iconify" data-icon="bx:bar-chart-square"></span>
  
 <hr/>
  
