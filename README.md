@@ -4,7 +4,7 @@
 
 
  
-<img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=Android&logoColor=white"/>
+<img alt="python" src ="https://img.shields.io/badge/python-000000.svg?&style=for-the-badge&logo=로고명&logoColor=로고색상"/>
  
 
   
