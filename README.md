@@ -55,8 +55,8 @@ gantt
 ![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
 ![Qt](https://img.shields.io/badge/Qt-%23217346.svg?style=for-the-badge&logo=Qt&logoColor=white)
 ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)
- #5C3EE8
+![OpenCV](https://img.shields.io/badge/OpenCV-%5C3EE820.svg?style=for-the-badge&logo=opencv&logoColor=white)
+
 
 <!--
 **VVCJW/VVCJW** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
