@@ -8,13 +8,13 @@
 
 ```mermaid
 gantt
-    title A Gantt Diagram
+    title 추첨
     dateFormat  YYYY-MM-DD
     axisFormat  %a %H
     section Section
-    A task           : a1, 2022-02-27, 12h
-    Another task     : a2, 2022-03-01, 1d
-    Another task     : a3,  2022-03-05, 1d
+    추첨        : 2022-02-27, 12h
+    추천        : 2022-03-01, 1d
+    결과        : 2022-03-05, 1d
  ```
  
 <hr/>
