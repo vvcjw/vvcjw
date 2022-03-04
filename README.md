@@ -3,19 +3,7 @@
 <hr/>
 
 ### Hi there 👋
- 
-<hr/>
 
-```mermaid
-gantt
-    title 추첨
-    dateFormat  YYYY-MM-DD
-    axisFormat  %a %H
-    section Section
-    추첨        : 2022-02-27, 12h
-    추천        : 2022-03-01, 1d
-    결과        : 2022-03-05, 1d
- ```
  
 <hr/>
  
