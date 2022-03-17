@@ -44,7 +44,7 @@
 ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/OpenCV-%5C3EE820.svg?style=for-the-badge&logo=opencv&logoColor=white)
 
-### [무료 저작권 모음](https://github.com/vvcjw/vvcjw/blob/master/무료저작권)
+### [무료 저작권 모음](https://github.com/vvcjw/vvcjw/blob/master/무료저작권.md)
 
 
 <!--
@@ -62,5 +62,5 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDU2NzM4ODAsMTk0MzU5MTg1M119
+eyJoaXN0b3J5IjpbLTEzODU3NjY4MjEsMTk0MzU5MTg1M119
 -->
