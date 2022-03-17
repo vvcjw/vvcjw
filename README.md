@@ -45,8 +45,7 @@
 ![OpenCV](https://img.shields.io/badge/OpenCV-%5C3EE820.svg?style=for-the-badge&logo=opencv&logoColor=white)
 
 ### [무료 저작권 모음](https://github.com/vvcjw/vvcjw/blob/master/free_license)
- 
- 스텍에디트테스트
+
 
 <!--
 **VVCJW/VVCJW** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -63,5 +62,5 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgzMjYyODUyLDE5NDM1OTE4NTNdfQ==
+eyJoaXN0b3J5IjpbLTEwNzY0NzE0NDksMTk0MzU5MTg1M119
 -->
