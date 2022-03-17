@@ -7,7 +7,7 @@
 <hr/>
 
 |구분|종류|
-|:--|:--|
+|:--:|:--|
 |개발언어|![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white)|
 |형상관리|![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)|
 |가상환경|![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)|
@@ -40,7 +40,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3MTM4NDQ5MSw1OTc0NjU3NTUsOTMxOT
-Y4NTQ1LC0xODEzNzY0MDU1LC0xODEzNzY0MDU1LC0xMzg1NzY2
-ODIxLDE5NDM1OTE4NTNdfQ==
+eyJoaXN0b3J5IjpbNTk3NDY1NzU1LDU5NzQ2NTc1NSw5MzE5Nj
+g1NDUsLTE4MTM3NjQwNTUsLTE4MTM3NjQwNTUsLTEzODU3NjY4
+MjEsMTk0MzU5MTg1M119
 -->
