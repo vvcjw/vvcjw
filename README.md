@@ -5,6 +5,12 @@
 
  
 <hr/>
+
+|구분|종류|
+|:--:|:--|
+|개발 언어|![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)|
+
+<hr/>
  
 ### Development Languages : 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white)
@@ -45,6 +51,6 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTM3NjQwNTUsLTE4MTM3NjQwNTUsLT
-EzODU3NjY4MjEsMTk0MzU5MTg1M119
+eyJoaXN0b3J5IjpbNjkwNTk4NDM3LC0xODEzNzY0MDU1LC0xOD
+EzNzY0MDU1LC0xMzg1NzY2ODIxLDE5NDM1OTE4NTNdfQ==
 -->
