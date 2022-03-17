@@ -29,7 +29,6 @@
 
 ### [무료 저작권 모음](https://github.com/vvcjw/vvcjw/blob/master/무료저작권.md)
 
-<clai src=https://cdn.icon-icons.com/icons2/205/PNG/512/text_x_python_24589.png>
 
 <!--
 **VVCJW/VVCJW** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -46,6 +45,6 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0Njg3ODc5NCwtMTgxMzc2NDA1NSwtMT
-M4NTc2NjgyMSwxOTQzNTkxODUzXX0=
+eyJoaXN0b3J5IjpbLTE4MTM3NjQwNTUsLTE4MTM3NjQwNTUsLT
+EzODU3NjY4MjEsMTk0MzU5MTg1M119
 -->
