@@ -6,7 +6,7 @@
 
 |구분|종류|
 |:--:|:--|
-|개발언어|![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)<br> ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white)|
+|개발언어|![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)<br> ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) |
 |빅데이터|![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)<br> ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) ![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white)|
 |형상관리|![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)|
 |가상환경|![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)|
@@ -39,8 +39,8 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI4MDYzMDc0LC0xMjcyNDE4NDg2LC0xNz
-U4MzQ2MDI1LDU5NzQ2NTc1NSw1OTc0NjU3NTUsOTMxOTY4NTQ1
-LC0xODEzNzY0MDU1LC0xODEzNzY0MDU1LC0xMzg1NzY2ODIxLD
-E5NDM1OTE4NTNdfQ==
+eyJoaXN0b3J5IjpbLTE4ODg4Nzg0MzQsLTEyNzI0MTg0ODYsLT
+E3NTgzNDYwMjUsNTk3NDY1NzU1LDU5NzQ2NTc1NSw5MzE5Njg1
+NDUsLTE4MTM3NjQwNTUsLTE4MTM3NjQwNTUsLTEzODU3NjY4Mj
+EsMTk0MzU5MTg1M119
 -->
