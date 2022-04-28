@@ -6,7 +6,7 @@
 
 |구분|종류|
 |:--:|:--|
-|개발언어|![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white)|
+|개발언어|![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)<br> ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white)|
 |형상관리|![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)|
 |가상환경|![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)|
 |운영체제|![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)|
@@ -38,7 +38,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk3NDY1NzU1LDU5NzQ2NTc1NSw5MzE5Nj
-g1NDUsLTE4MTM3NjQwNTUsLTE4MTM3NjQwNTUsLTEzODU3NjY4
-MjEsMTk0MzU5MTg1M119
+eyJoaXN0b3J5IjpbLTE3NTgzNDYwMjUsNTk3NDY1NzU1LDU5Nz
+Q2NTc1NSw5MzE5Njg1NDUsLTE4MTM3NjQwNTUsLTE4MTM3NjQw
+NTUsLTEzODU3NjY4MjEsMTk0MzU5MTg1M119
 -->
