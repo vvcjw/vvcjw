@@ -18,7 +18,7 @@
 
  
 ### etc.
-![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)   ![SciPy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)  ![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)  ![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
+![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)   ![SciPy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)    ![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
 ![Qt](https://img.shields.io/badge/Qt-%23217346.svg?style=for-the-badge&logo=Qt&logoColor=white) ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) ![OpenCV](https://img.shields.io/badge/OpenCV-%5C3EE820.svg?style=for-the-badge&logo=opencv&logoColor=white)
 
 ### [무료 저작권 모음](https://github.com/vvcjw/vvcjw/blob/master/무료저작권.md)
@@ -39,8 +39,8 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzI0MTg0ODYsLTE3NTgzNDYwMjUsNT
-k3NDY1NzU1LDU5NzQ2NTc1NSw5MzE5Njg1NDUsLTE4MTM3NjQw
-NTUsLTE4MTM3NjQwNTUsLTEzODU3NjY4MjEsMTk0MzU5MTg1M1
-19
+eyJoaXN0b3J5IjpbNTI4MDYzMDc0LC0xMjcyNDE4NDg2LC0xNz
+U4MzQ2MDI1LDU5NzQ2NTc1NSw1OTc0NjU3NTUsOTMxOTY4NTQ1
+LC0xODEzNzY0MDU1LC0xODEzNzY0MDU1LC0xMzg1NzY2ODIxLD
+E5NDM1OTE4NTNdfQ==
 -->
