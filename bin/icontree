@@ -1,0 +1,118 @@
+#!/bin/python3
+
+from pathlib import Path
+from itertools import islice
+import argparse
+
+# prefix components:
+#space =  '     '
+#branch = '│   '
+# pointers:
+#tee =    '├─ '
+#last =   '└─ '
+space =  '     '
+branch = '│   '
+tee =    '├─ '
+last =   '└─ '
+" 🗀 🗁 📁 📂 🖿 "
+" 📄 📃 🗋 📊 📉 📈 🖹 "
+icon_dir = '📂'
+icon_file = '📄'
+icons = {
+    '.wav':'🔊',
+	'.pth':'🤖',
+	'.csv':'📉',
+}
+icon_audio = '🔊'
+icon_model = '🤖'
+icon_csv = '📉'
+
+def tree(dir_path: Path,
+         level: int=-1,
+         limit_to_directories: bool=False,
+         length_limit: int=1000,
+         max_item : int=1000,
+         pass_list= ['.git', '__pycache__', '.ipynb_checkpoints']
+        ):
+    """Given a directory Path object print a visual tree structure"""
+    dir_path = Path(dir_path) # accept string coerceable to Path
+    files = 0
+    directories = 0
+    def inner(dir_path: Path, prefix: str='', level=-1):
+        nonlocal files, directories, max_item
+        if not level: 
+            return # 0, stop iterating
+        if limit_to_directories:
+            contents = sorted([d for d in dir_path.iterdir() if d.is_dir() and d.name not in pass_list])
+        else: 
+            dir_contents = sorted([d for d in dir_path.iterdir() if d.is_dir() and d.name not in pass_list])
+            file_contents = sorted([d for d in dir_path.iterdir() if d.is_file() and d.name not in pass_list])
+            
+            directories += len(dir_contents)
+            files += len(file_contents)
+                        
+            if len(file_contents) > max_item:
+                h = max_item // 2
+                file_contents = file_contents[:h] + [Path('⋮')] + file_contents[-h:]
+            
+            contents = dir_contents + file_contents
+            
+        pointers = [tee] * (len(contents) - 1) + [last]
+        for pointer, path in zip(pointers, contents):
+            if path.is_dir():
+                yield prefix + pointer + icon_dir + path.name
+                
+                extension = branch if pointer == tee else space 
+                yield from inner(path, prefix=prefix+extension, level=level-1)
+            elif not limit_to_directories:
+                if path.name == "⋮":
+                    yield prefix + pointer + '    ' +path.name
+                else:
+                    try:
+                        yield prefix + pointer + icons[path.suffix] +path.name
+                    except:
+                        yield prefix + pointer + icon_file +path.name
+
+                
+    print(icon_dir + dir_path.name)
+    iterator = inner(dir_path, level=level)
+    for line in islice(iterator, length_limit):
+        print(line)
+    if next(iterator, None):
+        print(f'... length_limit, {length_limit}, reached, counted:')
+    print(f'\n{directories} directories' + (f', {files} files' if files else ''))
+    
+    
+if "__main__" == __name__:
+    
+    parser = argparse.ArgumentParser()
+    #parser.add_argument('--root', type=str, required=True)
+    parser.add_argument('root')
+    parser.add_argument('-d', '--depth', type=int, default=-1)
+    parser.add_argument('-r', '--rows', type=int, default=1000)
+    parser.add_argument('-i', '--ignore', type=str, nargs='+')
+    parser.add_argument('-l', '--limit', type=int, default=1000)
+    parser.add_argument('--only_dir', action='store_true')
+	
+    args = parser.parse_args()
+    
+    root = args.root
+    depth = args.depth
+    rows = args.rows
+	
+    only_dir = args.only_dir
+    limit = args.limit
+        
+    ignore = args.ignore
+    if ignore is None:
+        ignore = []
+    
+
+    tree(
+        root,
+        level=depth,
+        pass_list=ignore,
+        max_item=rows,
+		length_limit=limit,
+        limit_to_directories=only_dir
+    )

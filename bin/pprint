@@ -1,0 +1,169 @@
+#!/home/jaewon/venv/venv3810-jupyter1/bin/python
+
+import sys
+import os
+
+def auto_resize(image=None, width=None, height=None, max_size=640):
+    if image is not None:
+        height, width = image.shape[0], image.shape[1]
+
+    if width > height:
+        height = int(height/width * max_size)
+        width = max_size
+    else:
+        width = int(width/height * max_size) 
+        height = max_size
+
+    return height, width
+
+
+def load(path, ext):
+    if ext in ['.npy']:
+        import numpy as np
+        from pprint import pprint
+
+        with open(path, 'rb') as f:
+            data = np.load(f)
+            print( f"shape{data.shape}" )
+            pprint( data )  
+        del data
+
+    elif ext in ['.json']:
+        import json
+        from pprint import pprint
+
+        with open(path) as f:
+            pprint(json.load(f))
+
+    elif ext in ['.pkl']:
+        import pickle
+        from pprint import pprint
+
+        with open(path, 'rb') as f:
+            pprint(pickle.load(f))
+
+    elif ext in ['.jpg', '.png']:
+        import cv2
+
+        image = cv2.imread(path)
+        height, width = auto_resize(image)
+        cv2.namedWindow(path, cv2.WINDOW_NORMAL) 
+        cv2.resizeWindow(path, (width, height)) 
+        cv2.imshow(path, image)
+        while True:
+            cv2.waitKey(1000)
+            if cv2.getWindowProperty(path, cv2.WND_PROP_VISIBLE) <1:
+                break
+        cv2.destroyAllWindows()
+
+    elif ext in ['.mp4']:
+        import cv2
+
+        cap = cv2.VideoCapture(path)
+        
+        width = cap.get(cv2.CAP_PROP_FRAME_WIDTH)
+        height = cap.get(cv2.CAP_PROP_FRAME_HEIGHT)
+        fps = cap.get(cv2.CAP_PROP_FPS)
+        total_frame = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+          
+        height, width = auto_resize(width=width, height=height)
+
+        cv2.namedWindow(path, cv2.WINDOW_NORMAL) 
+        cv2.resizeWindow(path, (width, height)) 
+
+        while cap.isOpened():
+            ret, frame = cap.read()
+            if ret:
+                cv2.imshow(path, frame)
+                if cv2.waitKey(int(fps)) & 0xFF == ord("q"):
+                    break
+                if cv2.getWindowProperty(path, cv2.WND_PROP_VISIBLE) <1:
+                    break
+            else:
+                break
+
+        cap.release()
+        cv2.destroyAllWindows()
+
+    elif ext in ['.xlsx']:
+        import pandas as pd
+        import re
+
+        xls = pd.ExcelFile(path)
+        for sheet_name in xls.sheet_names:
+            df = pd.read_excel(path, sheet_name=sheet_name)
+    
+            if df.shape[0] > 10:
+                df = pd.concat([df.head(5), df.tail(6)], axis=0)
+
+                markdown = df.to_markdown(tablefmt="pretty")
+                markdown = markdown.split('\n')
+                markdown[7] = re.sub('[^|]', ':',markdown[7])
+            else:
+                markdown = df.to_markdown(tablefmt="pretty")
+                markdown = markdown.split('\n')
+
+            print_low = '+' + '-' * (len(markdown[-1]) - 2) + '+'
+            markdown.insert(0, print_low)
+            print_low = f"| sheet name : {sheet_name}"
+            print_low = print_low + ' ' * (len(markdown[-1]) - len(print_low) - 1) + '|'
+            markdown.insert(1, print_low)
+            print_low = f"| shape : {df.shape}"
+            print_low = print_low + ' ' * (len(markdown[-1]) - len(print_low) - 1) + '|'
+            markdown.insert(2, print_low)        
+            markdown = '\n'.join(markdown)
+            print(markdown)
+        
+    elif ext in ['.csv']:
+        import pandas as pd
+        import chardet
+        import re
+
+        with open(path, 'rb') as rawdata:
+            file_info = chardet.detect(rawdata.read(10000))
+        
+        df = pd.read_csv(path, encoding=file_info['encoding'])
+    
+        if df.shape[0] > 10:
+            df = pd.concat([df.head(5), df.tail(6)], axis=0)
+
+            markdown = df.to_markdown(tablefmt="pretty")
+            markdown = markdown.split('\n')
+            markdown[7] = re.sub('[^|]', ':',markdown[7])
+        else:
+            markdown = df.to_markdown(tablefmt="pretty")
+            markdown = markdown.split('\n')
+
+        for key in file_info.keys():
+            print_low = f"| {key} : {file_info[key]}"
+            print_low = print_low + ' ' * (len(markdown[-1]) - len(print_low) - 1) + '|'
+            markdown.insert(0, print_low)
+
+        print_low = f"| shape : {df.shape}"
+        print_low = print_low + ' ' * (len(markdown[-1]) - len(print_low) - 1) + '|'
+        markdown.insert(0, print_low)        
+
+        print_low = '+' + '-' * (len(markdown[-1]) - 2) + '+'
+        markdown.insert(0, print_low)
+
+        markdown = '\n'.join(markdown)
+        print(markdown)        
+
+
+if __name__ == "__main__":
+    if len(sys.argv) == 1:
+        sys.exit()
+        
+    path = sys.argv[1]
+    _, ext = os.path.splitext(path)
+
+    if len(ext) == 0:
+        for ext in ['.npy', '.json', 'pkl']:
+            try:
+                load(path, ext)
+                break
+            except:
+                pass
+    else:
+        load(path, ext)
+

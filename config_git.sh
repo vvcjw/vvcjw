@@ -1,8 +1,8 @@
 #!/bin/bash
 
 
-git config --global log.date iso
 git config --global core.quotepath false
+git config --global log.date iso
 git config --global alias.ll "log \
     --date-order \
     --date=iso \
