@@ -4,4 +4,5 @@ curl -O -L  https://sourceforge.net/projects/sshpass/files/sshpass/1.06/sshpass-
 cd sshpass-1.06/
 ./configure
 sudo make install
+rm sshpass-1.06.tar.gz
 cd -
