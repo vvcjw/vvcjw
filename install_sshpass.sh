@@ -1,8 +1,11 @@
 #!/bin/bash
 
-curl -O -L  https://sourceforge.net/projects/sshpass/files/sshpass/1.06/sshpass-1.06.tar.gz && tar xvzf sshpass-1.06.tar.gz
-cd sshpass-1.06/
+VERSION=1.09
+
+curl -O -L  https://sourceforge.net/projects/sshpass/files/sshpass/$VERSION/sshpass-$VERSION.tar.gz && tar xvzf sshpass-$VERSION.tar.gz
+cd sshpass-$VERSION/
 ./configure
 sudo make install
-rm sshpass-1.06.tar.gz
+
 cd -
+rm sshpass-$VERSION.tar.gz
