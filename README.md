@@ -14,3 +14,16 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+<details>
+    <summary><b> Git (Remote : Branch) PS1</b></summary>
+    <p>
+        Prompt Scripts PS1 (<a href='TEST.md'>TEST.md</a>)
+    </p>
+<pre>
+(remote/repository:branch) user@hostname $
+</pre>
+</details>
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTY3MTA5NDMxMl19
+-->
