@@ -1,7 +1,6 @@
 #!/bin/bash
 
 
-
 echo '' >> ~/.profile
 echo '# vvcjw environment variable' >> ~/.profile
 echo 'export VVCJW_PATH="/home/$USER/.vvcjw"' >> ~/.profile
