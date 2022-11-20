@@ -1,6 +1,7 @@
 #!/bin/bash
 
 
+# git config --global credential.helper store
 git config --global core.quotepath false
 git config --global log.date iso
 git config --global alias.ll "log \

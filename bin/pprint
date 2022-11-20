@@ -1,4 +1,4 @@
-#!/home/vvcjw/.vvcjw/vvcjw/bin/python
+#!/home/vvcjw/.vvcjw/venv/bin/python
 
 import sys
 import os
