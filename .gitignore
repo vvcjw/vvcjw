@@ -1,9 +1,17 @@
+# Python cache
 **/__pycache__
 **/.ipython_checkpoints
 
-sshpass*
+# Mac 
+**/.DS_Store
+
+# virtual environmentt
 venv*
 
-utils*
+# ssh password util
+sshpass*
+
+# privates data
 private*
+utils*
 vvcjw*
