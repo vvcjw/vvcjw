@@ -1,0 +1,27 @@
+[log]
+	date = format:%Y-%m-%d (%a) %H:%M:%S
+[core]
+	quotepath = false
+	editor = vim
+[alias]
+	l = log --date-order --graph --full-history --color \
+    --pretty=format:'%x08%x09%C(red)%h %C(cyan)%ad %C(bold blue)%aN%C(reset)%C(bold yellow)%d %C(reset)%s'
+	la = log --date-order --graph --full-history --color --all \
+    --pretty=format:'%x08%x09%C(red)%h %C(cyan)%ad %C(bold blue)%aN%C(reset)%C(bold yellow)%d %C(reset)%s'
+
+    ch = "!git checkout $(git bselect)"
+    bselect = "! # select branch with preview; \n\
+        f() { \
+            _height=$(stty size | awk '{print $1}');\
+            git branch | egrep -v '^\\*' | fzf --preview \"git l {1} | head -n $_height\"; \
+        }; f"
+    s = status -s
+    a = "! # add files with fzf preview diffs; \n\
+        f() { \
+            _height=$(stty size | awk '{print $1}');\
+            git s | fzf -m --preview \"git diff {2} | head -n $_height | pygmentize\" | awk '{print $2}' | xargs git add; \
+        }; f"
+
+[user]
+[credential]
+	helper = store
