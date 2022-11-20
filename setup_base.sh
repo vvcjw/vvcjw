@@ -2,15 +2,18 @@
 
 
 
+echo '' >> ~/.profile
+echo '# vvcjw environment variable' >> ~/.profile
 echo 'export VVCJW_PATH="/home/$USER/.vvcjw"' >> ~/.profile
 echo 'export PATH="$VVCJW_PATH/bin:$PATH"' >> ~/.profile
-echo 'alias vvcjw="cd ${VVCJW_PATH}"' >> ~/.profile
+echo '' >> ~/.profile
+echo 'alias vvcjw="cd ${VVCJW_PATH}" | source $VVCJW_PATH/venv/bin/activate' >> ~/.profile
+echo '' >> ~/.profile
+echo 'source $VVCJW_PATH/prompt_git.sh' >> ~/.profile
+echo '' >> ~/.profile
 
-
-# alias vvcjw=source $VVCJW_PATH/vvcjw/bin/activate | cd $VVCJW_PATH
 
 # cd $VVCJW_PATH
 # python3 -m venv vvcjw > /dev/null &&
 # vvcjw
-
 
