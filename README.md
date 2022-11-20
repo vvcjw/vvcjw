@@ -18,12 +18,12 @@ Here are some ideas to get you started:
 <details>
     <summary><b> Git (Remote : Branch) PS1</b></summary>
     <p>
-        Prompt Scripts PS1 (<a href='TEST.md'>TEST.md</a>)
+        Prompt Scripts PS1 (<a href='https://github.com/vvcjw/vvcjw/blob/master/prompt_git.sh'>prompt_git.sh</a>)
     </p>
 <pre>
 (remote/repository:branch) user@hostname $
 </pre>
 </details>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3MTA5NDMxMl19
+eyJoaXN0b3J5IjpbLTE1MDU2MjU2OV19
 -->
