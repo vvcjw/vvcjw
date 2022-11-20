@@ -1,12 +1,9 @@
-
 **/__pycache__
+**/.ipython_checkpoints
 
 sshpass*
-
 venv*
 
-vvcjw/bin
-vvcjw/include
-vvcjw/lib
-vvcjw/lib64
-vvcjw/pyvenv.cfg
+utils*
+private*
+vvcjw*
