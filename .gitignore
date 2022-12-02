@@ -8,6 +8,9 @@
 # virtual environmentt
 venv*
 
+# notebook file (.ipynb)
+**/*.ipynb
+
 # ssh password util
 sshpass*
 
