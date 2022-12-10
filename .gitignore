@@ -5,14 +5,11 @@
 # Mac 
 **/.DS_Store
 
-# virtual environmentt
+# virtual environment
 venv*
 
 # notebook file (.ipynb)
 **/*.ipynb
-
-# ssh password util
-sshpass*
 
 # privates data
 private*
@@ -21,3 +18,7 @@ vvcjw*
 
 # stackedit 
 .stackedit-trash/
+
+# ssh password util
+sshpass*
+

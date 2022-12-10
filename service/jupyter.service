@@ -1,0 +1,11 @@
+[Unit]
+Description=Jupyter Default Daemon
+
+[Service]
+Type=test
+User=vvcjw
+ExecStart=/path/to/jupyter.sh
+PIDFile=/path/to/jupyter.pid
+
+[Install]
+WantedBy=multi-user.target
