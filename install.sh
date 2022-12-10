@@ -1,3 +1,3 @@
 
 
-git install https://github.com/vvcjw/vvcjw.git ~/.vvcjw
+git clone --single-branch https://github.com/vvcjw/vvcjw.git ~/.vvcjw
