@@ -12,9 +12,10 @@ venv*
 **/*.ipynb
 
 # privates data
-private*
-utils*
-vvcjw*
+*private*
+*utils*
+*Utils*
+*vvcjw*
 
 # stackedit 
 .stackedit-trash/
