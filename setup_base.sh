@@ -1,10 +1,9 @@
 #!/bin/bash
 
-HOME_PATH=`realpath ~`
 
 echo '' >> ~/.profile
 echo '# vvcjw environment variable' >> ~/.profile
-echo 'export VVCJW_PATH="$HOME_PATH/.vvcjw"' >> ~/.profile
+echo 'export VVCJW_PATH="$HOME/.vvcjw"' >> ~/.profile
 echo 'export PATH="$VVCJW_PATH/bin:$PATH"' >> ~/.profile
 echo '' >> ~/.profile
 echo 'alias vvcjw="cd $VVCJW_PATH && source $VVCJW_PATH/venv/bin/activate"' >> ~/.profile
