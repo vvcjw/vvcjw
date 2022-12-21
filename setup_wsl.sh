@@ -1,9 +1,10 @@
 #!/bin/bash
 
+APPEND_FILE_PATH=$HOME'/.profile'
 
 source ./setup_base.sh
 
-echo '' >> ~/.profile
-echo '# folder open alias' >> ~/.profile
-echo "command -v wslpath > /dev/null && alias open=explorer.exe" >> ~/.profile
-echo '' >> ~/.profile
+echo '' >> $APPEND_FILE_PATH
+echo '# folder open alias' >> $APPEND_FILE_PATH
+echo "command -v wslpath > /dev/null && alias open=explorer.exe" >> $APPEND_FILE_PATH
+echo '' >> $APPEND_FILE_PATH
