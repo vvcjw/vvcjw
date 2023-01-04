@@ -24,6 +24,8 @@ Here are some ideas to get you started:
 (remote/repository:branch) user@hostname $
 </pre>
 </details>
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDU2MjU2OV19
--->
+
+
+```bash
+python -c "$(curl -fsSL https://raw.githubusercontent.com/pytorch/pytorch/master/torch/utils/collect_env.py)"
+```
