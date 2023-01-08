@@ -29,7 +29,7 @@ Here are some ideas to get you started:
 <details>
     <summary><b> PyTorch Environmental System</b></summary>
     <p>
-        Collect enviroment with pytorch
+        Collect enviroment with pytorch(<a href='https://raw.githubusercontent.com/pytorch/pytorch/master/torch/utils/collect_env.py'>collect_env.py</a>)
     </p>
 <pre>
 python -c "$(curl -fsSL https://raw.githubusercontent.com/pytorch/pytorch/master/torch/utils/collect_env.py)"
