@@ -26,6 +26,12 @@ Here are some ideas to get you started:
 </details>
 
 
-```bash
+<details>
+    <summary><b> PyTorch Environmental System</b></summary>
+    <p>
+        Collect enviroment with pytorch
+    </p>
+<pre>
 python -c "$(curl -fsSL https://raw.githubusercontent.com/pytorch/pytorch/master/torch/utils/collect_env.py)"
-```
+</pre>
+</details>
