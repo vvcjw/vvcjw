@@ -34,4 +34,33 @@ Here are some ideas to get you started:
 <pre>
 python -c "$(curl -fsSL https://raw.githubusercontent.com/pytorch/pytorch/master/torch/utils/collect_env.py)"
 </pre>
+<pre>
+Collecting environment information...
+PyTorch version: N/A
+Is debug build: N/A
+CUDA used to build PyTorch: N/A
+ROCM used to build PyTorch: N/A
+
+OS: Ubuntu 22.04.1 LTS (x86_64)
+GCC version: (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0
+Clang version: Could not collect
+CMake version: Could not collect
+Libc version: glibc-2.35
+
+Python version: 3.10.6 (main, Nov 19 2022, 22:26:14) [GCC 11.3.0] (64-bit runtime)
+Python platform: Linux-5.15.79.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+Is CUDA available: N/A
+CUDA runtime version: Could not collect
+CUDA_MODULE_LOADING set to: N/A
+GPU models and configuration: GPU 0: NVIDIA GeForce MX150
+Nvidia driver version: 512.72
+cuDNN version: Could not collect
+HIP runtime version: N/A
+MIOpen runtime version: N/A
+Is XNNPACK available: N/A
+
+Versions of relevant libraries:
+[pip3] No relevant packages
+[conda] Could not collect
+</pre>
 </details>
